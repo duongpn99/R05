@@ -1,6 +1,6 @@
 (function(){
     var $imgs = $('#gallery img');
-    var #search = $('filter-search');
+    var $search = $('#filter-search');
     var cache = [];
 
     $imgs.each(function(){
@@ -21,7 +21,7 @@
         });
     }
     if('oninput' in $search[0]){
-        @$search.on('input',filter);
+        $search.on('input',filter);
     } else{
         $search.on('keyup', filter);
     }
